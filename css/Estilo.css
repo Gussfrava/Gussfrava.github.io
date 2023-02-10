@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+}
+
+.tituloinicio p{
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.titulo {
+    color: #B97A67;
+    font-size: 45px;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.textohotel{
+    color: #B97A67;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+.textosalon{
+    color: #B97A67;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Header */
+
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:#020202;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 130px;
+    font-family: 'Nanum Myeongjo', serif;
+    color:#585555;
+
+}
+
+.textos-header h2{
+    font-size: 100px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 300px;
+    color:#585555;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+    background-image: url(../img/backhojas.png);
+    background-repeat:no-repeat;
+    background-position: bottom right;
+
+}
+
+.frase{
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 34px;
+    color:#585555;
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Galeria */
+
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.img-galeria:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+    transition-delay: 0.2s ;
+}
+
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1.2);
+}
+
+/* Clients */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #4d0686;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*  Our team */
+
+.about-services{
+    background: #ffffff;
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+
+footer{
+    background: #e1a292c2;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #ffffff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: rgb(255, 255, 255);
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /* Clientes */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 40px;
+    }
+
+    .textos-header h2{
+        font-size: 35px;
+    }
+
+    /* ABOUT US */
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 95%;
+    }
+
+    /* Clients */
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ffffff;
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    .sobre-salon-grid {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        background-image: url(../img/backgroundrosita.png);
+        background-repeat:no-repeat;
+        background-size: 1950px;
+        background-position: center;
+    
+    }
+
+    .sobre-salon-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        column-gap: 3rem;
+        padding: 30px;
+    }
+}
+.texto-salon {
+    grid-row: 1 / 3;
+    color: #e1a292;
+    padding: 5rem;
+}
+@media (min-width: 768px) { 
+    .texto-salon {
+        grid-column: 2 / 3;
+    }
+}
+
+@media (min-width: 768px) { 
+    .sobre-hotel-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        column-gap: 3rem;
+        padding: 20px;
+        background: #f3ddd4;
+        border-radius: 22px 22px 22px 22px;
+        padding: 30px;
+    }
+}
+    .texto-hotel {
+    grid-row: 1/ 3;
+    color: #e1a292;
+    padding: 5rem;
+}
+@media (min-width: 768px) { 
+    .texto-hotel {
+        grid-column: 2/ 3;
+        background-image: url(../img/hojastexto.png);
+        background-repeat:no-repeat;
+        background-position: bottom right;
+    }
+}
+
+.mapa-salon
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.css-button-arrow--green {
+    min-width: 230px;
+    height: 80px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #ee61cb
+  }
+  .css-button-arrow--green:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  .css-button-arrow--green:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+  .css-button-arrow--green:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 30px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+  }
+
+  .css-button-arrow--blue {
+    min-width: 230px;
+    height: 80px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #295da0
+  }
+  .css-button-arrow--blue:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  .css-button-arrow--blue:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+  .css-button-arrow--blue:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 30px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: auto;
+    column-gap: 39rem;
+    padding: 32px;
+    }  
+
+
+    .Mesa-de-regalos {
+        background: #f3ddd4;
+        border-radius: 22px 22px 22px 22px;
+        padding: 32px;
+    }
+
+    .container-regalos {
+        background: #f3ddd4;
+        border-radius: 22px 22px 22px 22px;
+        padding: 30px;
+    }
+
+    #trucazo{
+        opacity: 0;
+    }
+
+    #Power-Contenedoriti{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+      }
+
+      #Power-Contenedor{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+      }
+
+      #container-itineraio {
+        max-width:1000px;
+        margin: 0px auto;
+        padding: 15px;
+      }
+
+    .asistencia{
+        background-image: url(../img/v839-my-10a.jpg);
+        background-repeat: no-repeat;
+        background-size: 2000px;
+    }
